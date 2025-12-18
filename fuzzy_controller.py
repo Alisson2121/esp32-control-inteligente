@@ -25,7 +25,7 @@ MQTT_USER = os.getenv("MQTT_USER", "esp32user")
 MQTT_PASS = os.getenv("MQTT_PASS", "Esp32pass123")
 
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://eiwyyyjmfjfxbibecsuf.supabase.co")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "tu_api_key_aqui")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY", "sb_publishable_RRkHl4GAQAcLkxCMXkk6Jw_ZJTL4dZq")
 
 # ========================================
 # DEFINIR VARIABLES LINGÜÍSTICAS
@@ -316,9 +316,9 @@ class ControladorFuzzyMQTT:
             from supabase import create_client
             
             supabase = create_client(
-            SUPABASE_URL,
-            SUPABASE_KEY
-        )
+                SUPABASE_URL,
+                SUPABASE_KEY
+            )
             
             data = {
                 "temperatura_actual": self.temp_actual,
