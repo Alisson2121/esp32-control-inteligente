@@ -3,5 +3,4 @@ numpy==1.24.3
 paho-mqtt==1.6.1
 supabase==2.3.4
 experta==1.9.4
-```
 
