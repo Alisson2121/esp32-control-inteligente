@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: esp32-control-inteligente
+    env: python
+    plan: free
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: python fuzzy_controller.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: PIP_NO_CACHE_DIR
+        value: 1
