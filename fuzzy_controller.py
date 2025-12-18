@@ -11,6 +11,8 @@ import paho.mqtt.client as mqtt
 import json
 import time
 from datetime import datetime
+from keep_alive import keep_alive
+import os
 
 # ========================================
 # CONFIGURACIÓN MQTT
@@ -400,6 +402,7 @@ def prueba_sin_mqtt():
 # PUNTO DE ENTRADA
 # ========================================
 
+# MODIFICAR EL IF __MAIN__ AL FINAL:
 if __name__ == "__main__":
     import sys
     
@@ -407,8 +410,11 @@ if __name__ == "__main__":
     print("🧠 SISTEMA DE CONTROL DIFUSO PARA ESP32")
     print("="*70)
     print("Autor: Sistema de Control Inteligente")
-    print("Versión: 1.0")
+    print("Versión: 1.0 - Render Deploy")
     print("="*70 + "\n")
+    
+    # AGREGAR ESTO: Iniciar servidor web para Render
+    keep_alive()
     
     # Verificar si se quiere modo prueba
     if len(sys.argv) > 1 and sys.argv[1] == "--prueba":

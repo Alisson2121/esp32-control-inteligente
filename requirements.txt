@@ -1,5 +1,6 @@
-numpy
-scipy
-scikit-fuzzy
-paho-mqtt
-supabase
+scikit-fuzzy==0.4.2
+numpy==1.24.3
+paho-mqtt==1.6.1
+supabase==2.3.4
+experta==1.9.4
+flask==3.0.0
