@@ -1,0 +1,1 @@
+worker: python fuzzy_controller.py
