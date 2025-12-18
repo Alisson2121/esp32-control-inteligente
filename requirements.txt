@@ -1,4 +1,5 @@
-scikit-fuzzy
 numpy
+scipy
+scikit-fuzzy
 paho-mqtt
 supabase
