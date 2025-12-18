@@ -1,10 +1,12 @@
-# ============================================
-# REQUIREMENTS PARA RENDER (sin compilación)
-# ============================================
+# ===============================
+# REQUIREMENTS PARA RENDER
+# Python 3.10 (runtime.txt)
+# ===============================
 
-# Versiones específicas pre-compiladas
 numpy==1.24.3
-scipy==1.11.4
+scipy==1.10.1
+networkx==3.1
+matplotlib==3.7.3
 scikit-fuzzy==0.4.2
 
 # MQTT
@@ -19,8 +21,7 @@ gotrue==2.4.2
 # Sistema experto
 experta==1.9.4
 
-# Flask para keep-alive
+# Flask
 flask==3.0.0
 
-# Dependencias adicionales
 python-dateutil==2.8.2
